@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Formulario</title>
+</head>
+<body>
+    <form action="procesarforumlario.php" method="get">
+            <p>Fecha: <input type="date" name="fecha"></p>
+            <p>Hora: <input type="time" name="hora"></p>
+            <p>Nombre: <input type="text" name="nombre" size="40"></p>
+            <p>Apellidos: <input type="text" name="apellidos" size="40"></p>
+            <p>Año de nacimiento: <input type="number" name="nacido" min="1900" max="2022"></p>
+            <p>Email: <input type="email" name="email" size="40" required=""></p>
+            <p>Foto del dni: <input type="file" name="foto dni"></p>
+            <p>Telefono: <input type="number" name="telefono"></p>
+            <p>Sexo:
+              <input type="radio" name="hm" value="h"> Hombre
+              <input type="radio" name="hm" value="m"> Mujer
+              <input type="radio" name="hm" value="p"> Prefiero no decirlo
+            </p>
+            <p>Deportes</p>
+                <input type="checkbox" name="futbol">fútbol
+                <input type="checkbox" name="baloncesto">baloncesto
+                <input type="checkbox" name="padel">pádel
+                <input type="checkbox" name="tenis">tenis
+                <input type="checkbox" name="golf">golf
+                <input type="checkbox" name="boxeo">boxeo
+                <input type="checkbox" name="ping pong">ping pong
+            <p>
+              <input type="submit" value="Enviar">
+              <input type="reset" value="Borrar">
+            </p>
+                <p>Equipos de fútbol/baloncesto/boxeo/tenis</p>
+                    <select name="menu">
+                        <option value="1">Real Madrid</option>
+                        <option value="2">Barcelona</option>
+                        <option value="3">Atlético de Madrid</option>
+                        <option value="4">Valencia</option>
+                    </select>
+                    
+                    <select name="menu2">
+                        <option value="1">Chicago Bulss</option>
+                        <option value="2">Lakers</option>
+                        <option value="3">Warriors</option>
+                        <option value="4">Celtics</option>
+                  </select>
+                  <select name="menu3">
+                    <option value="1">Mohamed ali</option>
+                    <option value="2">Myke tyson</option>
+                    <option value="3">Manny Pacquiao</option>
+                    <option value="4">George Foreman</option>
+              </select>
+              <select name="menu4">
+                    <option value="1">Rafa Nadal</option>
+                    <option value="2">Federer</option>
+                    <option value="3">Alcaraz</option>
+                    <option value="4">Novak Đoković </option>
+          </select>
+          </form>
+        
+
+    </form>
+</body>
+</html>
