@@ -10,17 +10,45 @@
     <form action="procesarforumlario.php" method="get">
             <p>Fecha: <input type="date" name="fecha"></p>
             <p>Hora: <input type="time" name="hora"></p>
-            <p>Nombre: <input type="text" name="nombre" size="40"></p>
+            <fieldset>
+            <p>Nombre: <input type="text" name="nombre" id="nombre1" size="40"></p>
+            <label for="nombre1"></label>
             <p>Apellidos: <input type="text" name="apellidos" size="40"></p>
             <p>Año de nacimiento: <input type="number" name="nacido" min="1900" max="2022"></p>
-            <p>Email: <input type="email" name="email" size="40" required=""></p>
+            <p>Email: <input type="email" name="email" size="40" required="" placeholder="usuario@domio"></p>
             <p>Foto del dni: <input type="file" name="foto dni"></p>
             <p>Telefono: <input type="number" name="telefono"></p>
+            <p>Lugar de nacimiento:</p>
             <p>Sexo:
               <input type="radio" name="hm" value="h"> Hombre
               <input type="radio" name="hm" value="m"> Mujer
               <input type="radio" name="hm" value="p"> Prefiero no decirlo
             </p>
+        </fieldset>
+        <p>Comentarios: <textarea name="Comentarios:" cols="50" rows="4" placeholder="Escriba sus comenatrios"></textarea></p>
+        <select name="menu1" size="5" multiple>
+            <option value=""></option>
+            <optgroup label="Cataluña">
+            <option value="Barcelona">Barcelona</option>
+            <option value="Barcelona">Tarragona</option>
+        </optgroup>
+            <optgroup label="Comunidad de Madrid">
+            <option value="Madrid">Madrid</option>
+        </optgroup>
+            <optgroup label="Pais Vasco">
+            <option value="Pais Vasco">Bilbao</option>
+        </optgroup>
+    </select>
+</p>
+<p>Lugares visitados: <select name="Lugaresvisitados[]" size="6" multiple>
+    <option value="Barcelona">Barcelona</option>
+   <option value="Valencia">Valencia</option>
+    <option value="Asturias">Asturias</option>
+    <option value="Cadiz">Cadiz</option>
+    <option value="Madrid">Madrid</option>
+    <option value="Sevilla">Sevilla</option>
+ </select>
+</p>
             <p>Deportes</p>
                 <input type="checkbox" name="futbol">fútbol
                 <input type="checkbox" name="baloncesto">baloncesto
@@ -29,10 +57,7 @@
                 <input type="checkbox" name="golf">golf
                 <input type="checkbox" name="boxeo">boxeo
                 <input type="checkbox" name="ping pong">ping pong
-            <p>
-              <input type="submit" value="Enviar">
-              <input type="reset" value="Borrar">
-            </p>
+          
                 <p>Equipos de fútbol/baloncesto/boxeo/tenis</p>
                     <select name="menu">
                         <option value="1">Real Madrid</option>
@@ -48,20 +73,45 @@
                         <option value="4">Celtics</option>
                   </select>
                   <select name="menu3">
+                    <option value="1">Fernando Belasteguín</option>
+                    <option value="2">Pablo Lima</option>
+                    <option value="3">Juan Lebrón</option>
+                    <option value="4">Juan Martín Díaz</option>
+      </select>
+      <select name="menu4">
+        <option value="1">Rafa Nadal</option>
+        <option value="2">Federer</option>
+        <option value="3">Alcaraz</option>
+        <option value="4">Novak Đoković</option>
+</select>
+<select name="menu5">
+    <option value="1">Jack Nicklaus</option>
+    <option value="2">Bernhard Langer</option>
+    <option value="3">Severiano Ballesteros</option>
+    <option value="4">Nick Faldo</option>
+</select>
+                  <select name="menu6">
                     <option value="1">Mohamed ali</option>
                     <option value="2">Myke tyson</option>
                     <option value="3">Manny Pacquiao</option>
                     <option value="4">George Foreman</option>
               </select>
-              <select name="menu4">
-                    <option value="1">Rafa Nadal</option>
-                    <option value="2">Federer</option>
-                    <option value="3">Alcaraz</option>
-                    <option value="4">Novak Đoković </option>
+              <select name="menu7">
+                <option value="1">Wang Nan</option>
+                <option value="2">Liu Shiwen</option>
+                <option value="3">Ding Ning</option>
+                <option value="4">Deng Yaping</option>
           </select>
+          <p>
+                <button>
+                <img src="img/perro.jpeg" alt="perro" width="40" height="60">
+                    Boton creado con la etiqueta button
+                </button>
+          </p>
+          <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+          </p>
           </form>
-        
-
-    </form>
 </body>
 </html>
